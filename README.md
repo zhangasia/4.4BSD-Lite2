@@ -23,6 +23,17 @@ This TCP/IP stack is alive, using tap/tun device on Linux. (WIP)
 
 [Unofficial companion site of _TCP/IP Illustrated vol. 2_](http://chenshuo.github.io/tcpipv2)
 
+## error
+
+If the compiling host is a 64-bit operating system, the following error may occur：
+```
+fatal error: sys/cdefs.h: No such file or directory
+```
+You should install some dependency packages(https://blog.csdn.net/weixin_44498318/article/details/121282997)
+```
+sudo apt install gcc-multilib 
+```
+
 ## See also
 
 For running recent FreeBSD TCP/IP stack in user mode, take a look at https://github.com/pkelsey/libuinet and https://github.com/cloudius-systems/osv.
